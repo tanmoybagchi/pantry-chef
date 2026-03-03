@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2a3e"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d3b2e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#4d96ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="80" cy="55" r="42" fill="#4d96ff" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#6bcb77" opacity="0.06"/>
+  <!-- Bowl -->
+  <ellipse cx="300" cy="255" rx="148" ry="78" fill="#1a2a3d" stroke="#4d96ff" stroke-width="1.5" stroke-opacity="0.2" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="240" rx="138" ry="62" fill="#1e3348"/>
+  <!-- Pasta base -->
+  <ellipse cx="300" cy="235" rx="128" ry="52" fill="#e8c96a" opacity="0.45"/>
+  <g fill="none" stroke="#d4a040" stroke-width="1.5" opacity="0.3">
+    <path d="M 240 228 Q 265 218 290 228 Q 315 238 340 228"/>
+    <path d="M 250 238 Q 275 228 300 238 Q 325 248 350 238"/>
+    <path d="M 235 248 Q 260 238 285 248 Q 310 258 335 248"/>
+  </g>
+  <!-- Tuna chunks -->
+  <g fill="#c4956a" opacity="0.8" filter="url(#shadow)">
+    <ellipse cx="270" cy="222" rx="12" ry="8" transform="rotate(-10 270 222)"/>
+    <ellipse cx="320" cy="228" rx="11" ry="7" transform="rotate(15 320 228)"/>
+    <ellipse cx="295" cy="242" rx="10" ry="7" transform="rotate(-5 295 242)"/>
+    <ellipse cx="345" cy="238" rx="9" ry="6"/>
+  </g>
+  <!-- Tuna flake details -->
+  <g stroke="#a87c52" stroke-width="0.5" opacity="0.4" fill="none">
+    <line x1="263" y1="222" x2="277" y2="222"/>
+    <line x1="314" y1="228" x2="326" y2="228"/>
+  </g>
+  <!-- Cucumber bits -->
+  <g fill="#8BC34A" opacity="0.7">
+    <circle cx="255" cy="235" r="5"/>
+    <circle cx="255" cy="235" r="3" fill="#9CCC65" opacity="0.5"/>
+    <circle cx="335" cy="220" r="4.5"/>
+    <circle cx="335" cy="220" r="2.8" fill="#9CCC65" opacity="0.5"/>
+  </g>
+  <!-- Red onion -->
+  <g fill="none" stroke="#8e44ad" stroke-width="1.5" opacity="0.45">
+    <path d="M 280 215 Q 285 210 290 215"/>
+    <path d="M 348 245 Q 353 240 358 245"/>
+  </g>
+  <!-- Celery bits -->
+  <g fill="#a8d8a8" opacity="0.5">
+    <rect x="305" y="215" width="10" height="3" rx="1.5" transform="rotate(20 310 216)"/>
+    <rect x="260" cy="245" width="8" height="2.5" rx="1.2" y="245"/>
+  </g>
+  <!-- Mayo/dressing gloss -->
+  <g fill="#fff" opacity="0.12">
+    <ellipse cx="290" cy="225" rx="30" ry="10"/>
+    <ellipse cx="320" cy="240" rx="20" ry="8"/>
+  </g>
+  <!-- Parsley -->
+  <g fill="#27ae60" opacity="0.6">
+    <circle cx="280" cy="250" r="2"/>
+    <circle cx="310" cy="248" r="1.8"/>
+    <circle cx="248" cy="242" r="1.5"/>
+  </g>
+  <text x="300" y="155" text-anchor="middle" font-size="56" filter="url(#shadow)">🐟</text>
+  <text x="300" y="335" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#f0e6ff" font-weight="bold" filter="url(#shadow)">Tuna Pasta Salad</text>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#a89bc2">Cool &amp; Tangy</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d3b1a"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#ff9f43;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="85" cy="55" r="42" fill="#6bcb77" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#ff9f43" opacity="0.06"/>
+  <!-- Wok -->
+  <path d="M 150 230 Q 160 310 300 310 Q 440 310 450 230" fill="#2a2a2a" stroke="#555" stroke-width="2" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="230" rx="150" ry="45" fill="#333"/>
+  <!-- Stir-fry base -->
+  <ellipse cx="300" cy="225" rx="138" ry="38" fill="#3d5c2e" opacity="0.6"/>
+  <!-- Broccoli florets -->
+  <g fill="#27ae60" filter="url(#shadow)">
+    <circle cx="260" cy="215" r="10"/>
+    <circle cx="270" cy="210" r="8"/>
+    <circle cx="253" cy="210" r="7"/>
+    <circle cx="330" cy="220" r="9"/>
+    <circle cx="340" cy="215" r="7"/>
+    <rect x="262" y="218" width="3" height="10" rx="1" fill="#1e8449"/>
+    <rect x="333" y="222" width="3" height="9" rx="1" fill="#1e8449"/>
+  </g>
+  <!-- Bell pepper strips -->
+  <g fill="#e74c3c" opacity="0.85">
+    <rect x="280" y="208" width="25" height="6" rx="3" transform="rotate(-15 292 211)"/>
+    <rect x="305" y="225" width="22" height="5" rx="2.5" transform="rotate(10 316 227)"/>
+  </g>
+  <g fill="#f39c12" opacity="0.8">
+    <rect x="240" y="225" width="22" height="5" rx="2.5" transform="rotate(-8 251 227)"/>
+    <rect x="350" y="210" width="20" height="5" rx="2.5" transform="rotate(20 360 212)"/>
+  </g>
+  <!-- Carrot slices -->
+  <g fill="#e67e22" opacity="0.75">
+    <ellipse cx="290" cy="230" rx="7" ry="5"/>
+    <ellipse cx="365" cy="228" rx="6" ry="4.5"/>
+    <ellipse cx="245" cy="235" rx="6" ry="4"/>
+  </g>
+  <!-- Sauce glisten -->
+  <g fill="#ffd93d" opacity="0.15">
+    <ellipse cx="300" cy="220" rx="40" ry="10"/>
+  </g>
+  <!-- Steam/sizzle -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity="0.12">
+    <path d="M 270 185 Q 265 168 270 152 Q 275 136 270 120"/>
+    <path d="M 300 180 Q 295 163 300 147 Q 305 131 300 115"/>
+    <path d="M 330 185 Q 325 168 330 152 Q 335 136 330 120"/>
+  </g>
+  <text x="300" y="155" text-anchor="middle" font-size="56" filter="url(#shadow)">🥘</text>
+  <text x="300" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#f0e6ff" font-weight="bold" filter="url(#shadow)">Vegetable Stir-Fry</text>
+  <text x="300" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#a89bc2">Crisp &amp; Colorful</text>
+</svg>

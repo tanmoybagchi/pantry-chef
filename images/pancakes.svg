@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1b0e"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#ffd93d;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <!-- Decorative -->
+  <circle cx="70" cy="70" r="40" fill="#ffd93d" opacity="0.06"/>
+  <circle cx="530" cy="60" r="50" fill="#c77dff" opacity="0.06"/>
+  <!-- Plate -->
+  <ellipse cx="300" cy="260" rx="150" ry="50" fill="#e8e0d0" opacity="0.15" filter="url(#shadow)"/>
+  <!-- Pancake stack -->
+  <ellipse cx="300" cy="250" rx="90" ry="22" fill="#c4956a" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="245" rx="88" ry="20" fill="#d4a574"/>
+  <ellipse cx="300" cy="232" rx="85" ry="22" fill="#c4956a"/>
+  <ellipse cx="300" cy="227" rx="83" ry="20" fill="#d4a574"/>
+  <ellipse cx="300" cy="214" rx="80" ry="22" fill="#c4956a"/>
+  <ellipse cx="300" cy="209" rx="78" ry="20" fill="#dbb28a"/>
+  <!-- Butter pat -->
+  <rect x="285" y="195" width="30" height="12" rx="3" fill="#ffeaa7" filter="url(#shadow)"/>
+  <rect x="287" y="197" width="26" height="8" rx="2" fill="#fff3c4"/>
+  <!-- Syrup drips -->
+  <path d="M 280 205 Q 270 220 260 250 Q 258 260 265 258" fill="#b8860b" opacity="0.7"/>
+  <path d="M 320 205 Q 330 225 340 255 Q 342 262 335 260" fill="#b8860b" opacity="0.6"/>
+  <path d="M 300 200 Q 295 210 292 225" fill="none" stroke="#b8860b" stroke-width="4" opacity="0.5" stroke-linecap="round"/>
+  <!-- Banana slices -->
+  <ellipse cx="250" cy="200" rx="12" ry="10" fill="#f9e076" opacity="0.8"/>
+  <ellipse cx="250" cy="200" rx="5" ry="4" fill="#e6c94a" opacity="0.5"/>
+  <ellipse cx="350" cy="205" rx="11" ry="9" fill="#f9e076" opacity="0.7"/>
+  <ellipse cx="350" cy="205" rx="4" ry="3.5" fill="#e6c94a" opacity="0.5"/>
+  <!-- Emoji -->
+  <text x="300" y="155" text-anchor="middle" font-size="56" filter="url(#shadow)">🥞</text>
+  <!-- Title -->
+  <text x="300" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#f0e6ff" font-weight="bold" filter="url(#shadow)">Banana Pancakes</text>
+  <text x="300" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#a89bc2">Sweet &amp; Fluffy</text>
+</svg>

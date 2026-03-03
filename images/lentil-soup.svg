@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0545"/>
+      <stop offset="50%" style="stop-color:#3b1a0a"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#ff9f43;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="80" cy="55" r="42" fill="#ff9f43" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#ffd93d" opacity="0.06"/>
+  <!-- Bowl -->
+  <ellipse cx="300" cy="250" rx="140" ry="85" fill="#2a1508" stroke="#ff9f43" stroke-width="1.5" stroke-opacity="0.2" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="235" rx="130" ry="65" fill="#3d2210"/>
+  <!-- Lentil soup base -->
+  <ellipse cx="300" cy="230" rx="122" ry="57" fill="#d4760a" opacity="0.8"/>
+  <ellipse cx="300" cy="225" rx="116" ry="50" fill="#e8960a" opacity="0.6"/>
+  <!-- Lentil texture -->
+  <g fill="#c47a1a" opacity="0.4">
+    <circle cx="265" cy="220" r="3"/>
+    <circle cx="285" cy="215" r="2.5"/>
+    <circle cx="310" cy="222" r="3"/>
+    <circle cx="335" cy="218" r="2.5"/>
+    <circle cx="275" cy="235" r="2.8"/>
+    <circle cx="300" cy="232" r="3"/>
+    <circle cx="325" cy="236" r="2.5"/>
+    <circle cx="250" cy="228" r="2.5"/>
+    <circle cx="348" cy="228" r="2.5"/>
+  </g>
+  <!-- Surface highlights -->
+  <ellipse cx="280" cy="218" rx="28" ry="10" fill="#f0a830" opacity="0.25"/>
+  <ellipse cx="330" cy="228" rx="20" ry="8" fill="#f0a830" opacity="0.2"/>
+  <!-- Lemon wedge -->
+  <g filter="url(#shadow)" transform="translate(340, 210) rotate(15)">
+    <path d="M 0 0 L 20 -8 L 20 8 Z" fill="#ffd93d" opacity="0.85"/>
+    <path d="M 2 0 L 18 -6 L 18 6 Z" fill="#fff3c4" opacity="0.4"/>
+    <line x1="5" y1="0" x2="17" y2="-4" stroke="#e6c319" stroke-width="0.5" opacity="0.5"/>
+    <line x1="5" y1="0" x2="17" y2="4" stroke="#e6c319" stroke-width="0.5" opacity="0.5"/>
+    <line x1="5" y1="0" x2="18" y2="0" stroke="#e6c319" stroke-width="0.5" opacity="0.5"/>
+  </g>
+  <!-- Cumin/herb sprinkle -->
+  <g fill="#8b6d50" opacity="0.5">
+    <circle cx="275" cy="212" r="1"/>
+    <circle cx="295" cy="208" r="0.8"/>
+    <circle cx="315" cy="215" r="1"/>
+    <circle cx="290" cy="228" r="0.8"/>
+    <circle cx="330" cy="225" r="1"/>
+  </g>
+  <!-- Steam -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity="0.13">
+    <path d="M 275 180 Q 270 165 275 150 Q 280 135 275 120"/>
+    <path d="M 300 175 Q 295 160 300 145 Q 305 130 300 115"/>
+    <path d="M 325 180 Q 320 165 325 150 Q 330 135 325 120"/>
+  </g>
+  <text x="300" y="155" text-anchor="middle" font-size="56" filter="url(#shadow)">🥣</text>
+  <text x="300" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#f0e6ff" font-weight="bold" filter="url(#shadow)">Lentil Soup</text>
+  <text x="300" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#a89bc2">Hearty &amp; Nourishing</text>
+</svg>

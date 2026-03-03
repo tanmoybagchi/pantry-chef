@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a05"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2a3e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="80" cy="55" r="42" fill="#ff6b6b" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#6bcb77" opacity="0.06"/>
+  <!-- Plate -->
+  <ellipse cx="300" cy="260" rx="160" ry="60" fill="#e8e0d0" opacity="0.08"/>
+  <!-- Alternating slices row -->
+  <g filter="url(#shadow)">
+    <!-- Tomato 1 -->
+    <circle cx="210" cy="235" r="22" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="210" cy="235" r="8" fill="#c0392b" opacity="0.3"/>
+    <!-- Mozzarella 1 -->
+    <circle cx="245" cy="235" r="22" fill="#f5f0e0" opacity="0.9"/>
+    <circle cx="245" cy="235" r="10" fill="#fff" opacity="0.3"/>
+    <!-- Tomato 2 -->
+    <circle cx="280" cy="235" r="22" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="280" cy="235" r="8" fill="#c0392b" opacity="0.3"/>
+    <!-- Mozzarella 2 -->
+    <circle cx="315" cy="235" r="22" fill="#f5f0e0" opacity="0.9"/>
+    <circle cx="315" cy="235" r="10" fill="#fff" opacity="0.3"/>
+    <!-- Tomato 3 -->
+    <circle cx="350" cy="235" r="22" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="350" cy="235" r="8" fill="#c0392b" opacity="0.3"/>
+    <!-- Mozzarella 3 -->
+    <circle cx="385" cy="235" r="22" fill="#f5f0e0" opacity="0.9"/>
+    <circle cx="385" cy="235" r="10" fill="#fff" opacity="0.3"/>
+  </g>
+  <!-- Basil leaves between slices -->
+  <g fill="#27ae60" opacity="0.85">
+    <ellipse cx="228" cy="225" rx="9" ry="5" transform="rotate(-30 228 225)"/>
+    <ellipse cx="298" cy="225" rx="9" ry="5" transform="rotate(20 298 225)"/>
+    <ellipse cx="368" cy="225" rx="8" ry="4.5" transform="rotate(-15 368 225)"/>
+    <ellipse cx="258" cy="228" rx="7" ry="3.5" transform="rotate(10 258 228)"/>
+    <ellipse cx="332" cy="228" rx="7" ry="3.5" transform="rotate(-20 332 228)"/>
+  </g>
+  <!-- Balsamic drizzle -->
+  <g fill="none" stroke="#3d1c02" stroke-width="2" opacity="0.45" stroke-linecap="round">
+    <path d="M 215 250 Q 240 245 265 252 Q 290 258 315 250 Q 340 243 365 252 Q 380 258 390 252"/>
+    <path d="M 225 258 Q 250 253 275 260 Q 300 266 320 258"/>
+  </g>
+  <!-- Olive oil drizzle -->
+  <g fill="none" stroke="#ffd93d" stroke-width="1.5" opacity="0.25" stroke-linecap="round">
+    <path d="M 210 242 Q 240 238 270 245 Q 300 252 330 243 Q 360 235 390 242"/>
+  </g>
+  <text x="300" y="155" text-anchor="middle" font-size="56" filter="url(#shadow)">🧀</text>
+  <text x="300" y="335" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#f0e6ff" font-weight="bold" filter="url(#shadow)">Caprese Salad</text>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#a89bc2">Elegant &amp; Fresh</text>
+</svg>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantry Chef — Recipe Suggester</title>
+  <meta name="description"
+    content="Enter the ingredients you have in your pantry and discover delicious recipes you can make right now." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ─── Hero ─── -->
+  <header class="hero">
+    <div class="hero-image-wrap">
+      <img src="images/hero-bg.png"
+        alt="Colorful pantry ingredients spread on a table" />
+      <div class="hero-overlay">
+        <h1>🍳 Pantry Chef</h1>
+        <p>Tell us what's in your pantry — we'll find the perfect recipes for you.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Main content ─── -->
+  <main class="container">
+
+    <!-- Pantry input panel -->
+    <section class="glass-card pantry-panel" aria-label="Pantry ingredient input">
+      <h2>🧺 Your <span>Pantry</span></h2>
+      <p class="hint">Type an ingredient and press Enter (or click Add). Click a tag to remove it.</p>
+
+      <div class="input-row">
+        <input id="ingredient-input" type="text" placeholder="e.g. eggs, garlic, pasta…" autocomplete="off"
+          aria-label="Add pantry ingredient" />
+        <button id="add-btn" aria-label="Add ingredient">+ Add</button>
+      </div>
+
+      <!-- Tag list -->
+      <div id="tags-container" role="list" aria-label="Added ingredients"></div>
+
+      <!-- Quick-add suggestions -->
+      <div class="quick-add">
+        <span class="quick-add-label">Quick add:</span>
+        <button class="quick-chip" data-ingr="eggs">🥚 Eggs</button>
+        <button class="quick-chip" data-ingr="garlic">🧄 Garlic</button>
+        <button class="quick-chip" data-ingr="tomatoes">🍅 Tomatoes</button>
+        <button class="quick-chip" data-ingr="pasta">🍝 Pasta</button>
+        <button class="quick-chip" data-ingr="onion">🧅 Onion</button>
+        <button class="quick-chip" data-ingr="chicken">🍗 Chicken</button>
+        <button class="quick-chip" data-ingr="rice">🍚 Rice</button>
+        <button class="quick-chip" data-ingr="butter">🧈 Butter</button>
+        <button class="quick-chip" data-ingr="olive oil">🫒 Olive Oil</button>
+        <button class="quick-chip" data-ingr="soy sauce">🥢 Soy Sauce</button>
+      </div>
+    </section>
+
+    <!-- Filters & sort bar -->
+    <div class="filters-bar" role="toolbar" aria-label="Recipe filters">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all">All Recipes</button>
+      <button class="filter-btn" data-filter="vegetarian">🥦 Vegetarian</button>
+      <button class="filter-btn" data-filter="vegan">🌱 Vegan</button>
+      <button class="filter-btn" data-filter="quick">⚡ Quick (≤20 min)</button>
+
+      <select id="sort-select" class="sort-select" aria-label="Sort recipes">
+        <option value="match">Sort: Best Match</option>
+        <option value="time">Sort: Quickest</option>
+        <option value="name">Sort: A–Z</option>
+      </select>
+    </div>
+
+    <!-- Recipe grid -->
+    <div class="section-heading">
+      <span>🍽 Recipes</span>
+      <span class="count-badge" id="recipe-count">15 recipes</span>
+    </div>
+
+    <div id="recipes-grid" role="list" aria-label="Recipe suggestions">
+      <!-- Populated by app.js -->
+      <div class="empty-state" style="grid-column:1/-1">
+        <span class="emoji">🌟</span>
+        <h3>All Recipes</h3>
+        <p>Start adding ingredients to see how well each recipe matches your pantry!</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ─── Recipe Modal ─── -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button id="modal-close" class="modal-close" aria-label="Close recipe">✕</button>
+      <img id="modal-img" class="modal-img" src="" alt="Recipe photo" />
+      <div class="modal-body">
+        <h2 id="modal-title" class="modal-title"></h2>
+        <div id="modal-meta" class="modal-meta"></div>
+
+        <p class="modal-section-title">Ingredients</p>
+        <ul id="modal-ingredients" class="modal-ingredients"></ul>
+
+        <p class="modal-section-title">Instructions</p>
+        <ol id="modal-steps" class="modal-steps"></ol>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
