@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1a0a"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#48dbfb;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="85" cy="55" r="42" fill="#48dbfb" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#ff9f43" opacity="0.06"/>
+  <!-- Bowl -->
+  <path d="M 145 240 Q 155 330 300 330 Q 445 330 455 240" fill="#1e1e2e" stroke="#555" stroke-width="2" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="240" rx="155" ry="48" fill="#2a2a3a"/>
+  <!-- Noodle base -->
+  <ellipse cx="300" cy="235" rx="130" ry="38" fill="#d4a24e" opacity="0.35"/>
+  <!-- Noodles -->
+  <g stroke="#e8c06a" stroke-width="3" fill="none" opacity="0.8">
+    <path d="M 200 230 Q 230 215 260 235 Q 290 255 320 230 Q 350 210 380 235"/>
+    <path d="M 210 245 Q 240 225 270 245 Q 300 265 330 240 Q 360 220 390 242"/>
+    <path d="M 195 238 Q 225 220 255 240 Q 285 260 315 235 Q 345 215 375 238"/>
+    <path d="M 220 250 Q 250 232 280 252 Q 310 270 340 248 Q 370 228 395 248"/>
+  </g>
+  <!-- Pork slices -->
+  <g fill="#b5784c" filter="url(#shadow)">
+    <ellipse cx="255" cy="222" rx="18" ry="8" transform="rotate(-10 255 222)"/>
+    <ellipse cx="310" cy="218" rx="16" ry="7" transform="rotate(12 310 218)"/>
+    <ellipse cx="350" cy="226" rx="15" ry="7" transform="rotate(-5 350 226)"/>
+  </g>
+  <g fill="#c8943e" opacity="0.7">
+    <ellipse cx="255" cy="220" rx="15" ry="6" transform="rotate(-10 255 220)"/>
+    <ellipse cx="310" cy="216" rx="13" ry="5.5" transform="rotate(12 310 216)"/>
+    <ellipse cx="350" cy="224" rx="12" ry="5.5" transform="rotate(-5 350 224)"/>
+  </g>
+  <!-- Bell pepper strips -->
+  <g fill="#e74c3c" opacity="0.75">
+    <rect x="230" y="228" width="20" height="5" rx="2.5" transform="rotate(15 240 230)"/>
+    <rect x="330" y="232" width="18" height="4.5" rx="2" transform="rotate(-12 339 234)"/>
+  </g>
+  <!-- Carrot slices -->
+  <g fill="#e67e22" opacity="0.7">
+    <ellipse cx="280" cy="232" rx="6" ry="4.5"/>
+    <ellipse cx="370" cy="235" rx="5.5" ry="4"/>
+  </g>
+  <!-- Green onion -->
+  <g fill="#27ae60" opacity="0.8">
+    <ellipse cx="295" cy="215" rx="4" ry="4" fill="#2ecc71"/>
+    <ellipse cx="325" cy="212" rx="3.5" ry="3.5" fill="#2ecc71"/>
+    <rect x="285" y="210" width="15" height="3" rx="1.5" fill="#27ae60" transform="rotate(-20 292 211)"/>
+  </g>
+  <!-- Steam -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity="0.12">
+    <path d="M 270 190 Q 265 170 275 155"/>
+    <path d="M 300 185 Q 295 165 305 150"/>
+    <path d="M 330 190 Q 325 170 335 155"/>
+  </g>
+  <!-- Title -->
+  <text x="300" y="60" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="22" opacity="0.9">Pork Stir-Fry Noodles</text>
+</svg>

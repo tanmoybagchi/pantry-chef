@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0800"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="85" cy="55" r="42" fill="#ff6b6b" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#ffd93d" opacity="0.06"/>
+  <!-- Bottom bun -->
+  <g filter="url(#shadow)">
+    <ellipse cx="300" cy="280" rx="90" ry="22" fill="#c8943e"/>
+    <rect x="210" y="268" width="180" height="12" rx="4" fill="#c8943e"/>
+  </g>
+  <!-- Lettuce -->
+  <g fill="#27ae60" opacity="0.85">
+    <path d="M 215 265 Q 230 255 250 262 Q 270 255 290 262 Q 310 255 330 262 Q 350 255 370 262 Q 385 265 390 268 L 210 268 Z"/>
+  </g>
+  <!-- Tomato slice -->
+  <ellipse cx="300" cy="258" rx="75" ry="10" fill="#e74c3c" opacity="0.85" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="257" rx="70" ry="8" fill="#c0392b" opacity="0.4"/>
+  <!-- Cheese (melted, draped) -->
+  <g fill="#ffd93d" opacity="0.85">
+    <rect x="218" y="242" width="164" height="14" rx="3" fill="#ffc107"/>
+    <path d="M 218 256 L 225 270 L 218 256 Z" fill="#ffc107"/>
+    <path d="M 370 256 L 382 256 L 378 270 Z" fill="#ffc107"/>
+  </g>
+  <!-- Beef patty -->
+  <g filter="url(#shadow)">
+    <ellipse cx="300" cy="243" rx="82" ry="18" fill="#5a2d0c"/>
+    <ellipse cx="300" cy="240" rx="80" ry="16" fill="#6d3a1a"/>
+    <!-- Grill marks -->
+    <g stroke="#4a2508" stroke-width="2.5" opacity="0.5">
+      <line x1="240" y1="238" x2="260" y2="242"/>
+      <line x1="270" y1="236" x2="290" y2="240"/>
+      <line x1="300" y1="238" x2="320" y2="242"/>
+      <line x1="330" y1="236" x2="350" y2="240"/>
+    </g>
+  </g>
+  <!-- Top bun -->
+  <g filter="url(#shadow)">
+    <path d="M 215 238 Q 215 185 300 180 Q 385 185 385 238" fill="#daa54e"/>
+    <path d="M 220 236 Q 220 190 300 185 Q 380 190 380 236" fill="#e8c06a"/>
+    <!-- Sesame seeds -->
+    <g fill="#f5f0e1" opacity="0.7">
+      <ellipse cx="270" cy="200" rx="4" ry="2.5" transform="rotate(-15 270 200)"/>
+      <ellipse cx="300" cy="193" rx="4" ry="2.5" transform="rotate(10 300 193)"/>
+      <ellipse cx="330" cy="198" rx="4" ry="2.5" transform="rotate(-5 330 198)"/>
+      <ellipse cx="285" cy="210" rx="3.5" ry="2" transform="rotate(20 285 210)"/>
+      <ellipse cx="315" cy="208" rx="3.5" ry="2" transform="rotate(-10 315 208)"/>
+      <ellipse cx="255" cy="215" rx="3" ry="1.8" transform="rotate(5 255 215)"/>
+      <ellipse cx="345" cy="212" rx="3" ry="1.8" transform="rotate(-15 345 212)"/>
+    </g>
+  </g>
+  <!-- Title -->
+  <text x="300" y="60" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="22" opacity="0.9">Classic Beef Burger</text>
+</svg>

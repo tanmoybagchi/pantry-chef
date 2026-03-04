@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0d00"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#ff9f43;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="85" cy="55" r="42" fill="#ff9f43" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#ffd93d" opacity="0.06"/>
+  <!-- Pan -->
+  <ellipse cx="300" cy="260" rx="155" ry="50" fill="#1a1a1a" stroke="#555" stroke-width="2" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="260" rx="140" ry="42" fill="#2a2a2a"/>
+  <!-- Sauce pool -->
+  <ellipse cx="300" cy="255" rx="125" ry="35" fill="#8B4513" opacity="0.5"/>
+  <!-- Chicken thigh 1 -->
+  <g filter="url(#shadow)">
+    <ellipse cx="260" cy="248" rx="50" ry="25" fill="#c8943e"/>
+    <ellipse cx="260" cy="245" rx="47" ry="22" fill="#daa54e"/>
+    <!-- Glaze -->
+    <ellipse cx="260" cy="243" rx="35" ry="15" fill="#b8860b" opacity="0.6"/>
+  </g>
+  <!-- Chicken thigh 2 -->
+  <g filter="url(#shadow)">
+    <ellipse cx="345" cy="252" rx="48" ry="24" fill="#c8943e"/>
+    <ellipse cx="345" cy="249" rx="45" ry="21" fill="#daa54e"/>
+    <ellipse cx="345" cy="247" rx="33" ry="14" fill="#b8860b" opacity="0.6"/>
+  </g>
+  <!-- Honey glaze drizzle -->
+  <g fill="#d4a017" opacity="0.7">
+    <path d="M 235 240 Q 240 235 250 238 Q 255 240 260 237" stroke="#d4a017" stroke-width="2" fill="none"/>
+    <path d="M 325 245 Q 335 240 345 243 Q 350 246 360 242" stroke="#d4a017" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Sesame seeds -->
+  <g fill="#f5f0e1" opacity="0.6">
+    <ellipse cx="250" cy="240" rx="2" ry="1.2"/><ellipse cx="265" cy="237" rx="1.8" ry="1"/>
+    <ellipse cx="240" cy="244" rx="1.5" ry="1"/><ellipse cx="275" cy="242" rx="2" ry="1.2"/>
+    <ellipse cx="335" cy="244" rx="1.8" ry="1"/><ellipse cx="350" cy="241" rx="2" ry="1.2"/>
+    <ellipse cx="360" cy="248" rx="1.5" ry="1"/><ellipse cx="340" cy="250" rx="1.8" ry="1"/>
+  </g>
+  <!-- Parsley garnish -->
+  <g fill="#27ae60">
+    <ellipse cx="298" cy="242" rx="6" ry="4" transform="rotate(-25 298 242)"/>
+    <ellipse cx="306" cy="244" rx="5" ry="3.5" transform="rotate(20 306 244)"/>
+  </g>
+  <!-- Steam -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity="0.12">
+    <path d="M 260 200 Q 255 180 265 165"/>
+    <path d="M 300 195 Q 295 175 305 160"/>
+    <path d="M 340 200 Q 335 180 345 165"/>
+  </g>
+  <!-- Title -->
+  <text x="300" y="60" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="22" opacity="0.9">Honey Garlic Chicken</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a05"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#c77dff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="85" cy="55" r="42" fill="#c77dff" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#ff6b6b" opacity="0.06"/>
+  <!-- Plate -->
+  <ellipse cx="300" cy="275" rx="165" ry="55" fill="#1e1e2e" stroke="#444" stroke-width="2" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="275" rx="145" ry="45" fill="#2a2a3a"/>
+  <!-- Kebab skewer 1 -->
+  <g filter="url(#shadow)" transform="rotate(-12 300 250)">
+    <line x1="160" y1="260" x2="440" y2="260" stroke="#8B7355" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="230" cy="258" rx="28" ry="14" fill="#6d3a1a"/>
+    <ellipse cx="230" cy="256" rx="26" ry="12" fill="#8B4513"/>
+    <ellipse cx="300" cy="258" rx="28" ry="14" fill="#6d3a1a"/>
+    <ellipse cx="300" cy="256" rx="26" ry="12" fill="#8B4513"/>
+    <ellipse cx="370" cy="258" rx="28" ry="14" fill="#6d3a1a"/>
+    <ellipse cx="370" cy="256" rx="26" ry="12" fill="#8B4513"/>
+    <!-- Grill marks -->
+    <g stroke="#4a2508" stroke-width="2" opacity="0.5">
+      <line x1="218" y1="253" x2="242" y2="259"/>
+      <line x1="288" y1="253" x2="312" y2="259"/>
+      <line x1="358" y1="253" x2="382" y2="259"/>
+    </g>
+    <!-- Herb flecks -->
+    <g fill="#27ae60" opacity="0.6">
+      <circle cx="225" cy="252" r="1.5"/><circle cx="235" cy="255" r="1.2"/>
+      <circle cx="295" cy="252" r="1.5"/><circle cx="305" cy="255" r="1.2"/>
+      <circle cx="365" cy="252" r="1.5"/><circle cx="375" cy="255" r="1.2"/>
+    </g>
+  </g>
+  <!-- Kebab skewer 2 -->
+  <g filter="url(#shadow)" transform="rotate(5 300 280)">
+    <line x1="170" y1="282" x2="430" y2="282" stroke="#8B7355" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="240" cy="280" rx="27" ry="13" fill="#6d3a1a"/>
+    <ellipse cx="240" cy="278" rx="25" ry="11" fill="#8B4513"/>
+    <ellipse cx="310" cy="280" rx="27" ry="13" fill="#6d3a1a"/>
+    <ellipse cx="310" cy="278" rx="25" ry="11" fill="#8B4513"/>
+    <ellipse cx="380" cy="280" rx="27" ry="13" fill="#6d3a1a"/>
+    <ellipse cx="380" cy="278" rx="25" ry="11" fill="#8B4513"/>
+    <g stroke="#4a2508" stroke-width="2" opacity="0.5">
+      <line x1="228" y1="275" x2="252" y2="281"/>
+      <line x1="298" y1="275" x2="322" y2="281"/>
+      <line x1="368" y1="275" x2="392" y2="281"/>
+    </g>
+    <g fill="#27ae60" opacity="0.6">
+      <circle cx="235" cy="274" r="1.5"/><circle cx="245" cy="277" r="1.2"/>
+      <circle cx="305" cy="274" r="1.5"/><circle cx="315" cy="277" r="1.2"/>
+      <circle cx="375" cy="274" r="1.5"/><circle cx="385" cy="277" r="1.2"/>
+    </g>
+  </g>
+  <!-- Yogurt sauce dollop -->
+  <g fill="#f5f0e1" opacity="0.8" filter="url(#shadow)">
+    <ellipse cx="195" cy="290" rx="20" ry="12"/>
+    <ellipse cx="195" cy="288" rx="17" ry="9" fill="#fafafa"/>
+  </g>
+  <!-- Lemon wedge -->
+  <g transform="translate(400, 275)" filter="url(#shadow)">
+    <path d="M -12 0 Q 0 -18 12 0 Z" fill="#f1c40f"/>
+    <path d="M -10 -1 Q 0 -15 10 -1 Z" fill="#f9e154" opacity="0.7"/>
+  </g>
+  <!-- Parsley -->
+  <g fill="#27ae60">
+    <ellipse cx="225" cy="270" rx="5" ry="3.5" transform="rotate(-30 225 270)"/>
+    <ellipse cx="232" cy="272" rx="4.5" ry="3" transform="rotate(15 232 272)"/>
+  </g>
+  <!-- Title -->
+  <text x="300" y="60" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="22" opacity="0.9">Lamb Kofta Kebabs</text>
+</svg>

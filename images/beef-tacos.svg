@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1000"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#ffd93d;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="85" cy="55" r="42" fill="#ffd93d" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#ff6b6b" opacity="0.06"/>
+  <!-- Plate -->
+  <ellipse cx="300" cy="290" rx="170" ry="50" fill="#1e1e2e" stroke="#444" stroke-width="2" filter="url(#shadow)"/>
+  <!-- Taco 1 -->
+  <g filter="url(#shadow)" transform="translate(-60, 0)">
+    <path d="M 240 270 Q 300 170 360 270" fill="#daa54e" stroke="#c8943e" stroke-width="2"/>
+    <path d="M 250 268 Q 300 185 350 268" fill="#e8c06a"/>
+    <!-- Beef filling -->
+    <g fill="#7a4419">
+      <circle cx="280" cy="245" r="6"/><circle cx="295" cy="240" r="7"/>
+      <circle cx="310" cy="242" r="6"/><circle cx="325" cy="248" r="5"/>
+      <circle cx="288" cy="255" r="5"/><circle cx="315" cy="255" r="5.5"/>
+    </g>
+    <!-- Lettuce -->
+    <g fill="#27ae60" opacity="0.85">
+      <path d="M 265 238 Q 280 225 295 235 Q 285 228 270 235"/>
+      <path d="M 310 235 Q 325 222 340 232 Q 330 225 315 232"/>
+    </g>
+    <!-- Cheese shreds -->
+    <g fill="#ffd93d" opacity="0.7">
+      <rect x="278" y="232" width="12" height="3" rx="1.5" transform="rotate(-10 284 233)"/>
+      <rect x="302" y="230" width="10" height="3" rx="1.5" transform="rotate(15 307 231)"/>
+      <rect x="320" y="236" width="11" height="2.5" rx="1.2" transform="rotate(-5 325 237)"/>
+    </g>
+    <!-- Tomato bits -->
+    <g fill="#e74c3c" opacity="0.8">
+      <circle cx="285" cy="236" r="3.5"/>
+      <circle cx="318" cy="238" r="3"/>
+    </g>
+  </g>
+  <!-- Taco 2 -->
+  <g filter="url(#shadow)" transform="translate(60, 5)">
+    <path d="M 240 270 Q 300 175 360 270" fill="#daa54e" stroke="#c8943e" stroke-width="2"/>
+    <path d="M 250 268 Q 300 190 350 268" fill="#e8c06a"/>
+    <g fill="#7a4419">
+      <circle cx="280" cy="248" r="6"/><circle cx="295" cy="243" r="7"/>
+      <circle cx="312" cy="245" r="5.5"/><circle cx="327" cy="250" r="5"/>
+      <circle cx="290" cy="258" r="5"/><circle cx="318" cy="257" r="5"/>
+    </g>
+    <g fill="#27ae60" opacity="0.85">
+      <path d="M 268 240 Q 283 227 298 237 Q 288 230 273 237"/>
+      <path d="M 312 237 Q 327 224 342 234 Q 332 227 317 234"/>
+    </g>
+    <g fill="#ffd93d" opacity="0.7">
+      <rect x="280" y="234" width="11" height="3" rx="1.5" transform="rotate(8 285 235)"/>
+      <rect x="308" y="233" width="10" height="2.5" rx="1.2" transform="rotate(-12 313 234)"/>
+    </g>
+    <g fill="#e74c3c" opacity="0.8">
+      <circle cx="298" cy="238" r="3"/>
+      <circle cx="322" cy="240" r="3.5"/>
+    </g>
+  </g>
+  <!-- Title -->
+  <text x="300" y="60" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="22" opacity="0.9">Beef Tacos</text>
+</svg>

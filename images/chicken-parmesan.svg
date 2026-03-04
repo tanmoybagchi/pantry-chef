@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a00"/>
+      <stop offset="50%" style="stop-color:#1a0545"/>
+      <stop offset="100%" style="stop-color:#0d2145"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <ellipse cx="300" cy="240" rx="200" ry="170" fill="url(#glow)"/>
+  <circle cx="85" cy="55" r="42" fill="#ff6b6b" opacity="0.07"/>
+  <circle cx="520" cy="80" r="48" fill="#ffd93d" opacity="0.06"/>
+  <!-- Plate -->
+  <ellipse cx="300" cy="260" rx="160" ry="55" fill="#1e1e2e" stroke="#444" stroke-width="2" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="260" rx="140" ry="45" fill="#2a2a3a"/>
+  <!-- Chicken breast -->
+  <ellipse cx="300" cy="245" rx="100" ry="35" fill="#c8943e" filter="url(#shadow)"/>
+  <ellipse cx="300" cy="240" rx="95" ry="30" fill="#daa54e"/>
+  <!-- Breadcrumb texture -->
+  <g fill="#e8c06a" opacity="0.6">
+    <circle cx="260" cy="238" r="2"/><circle cx="275" cy="232" r="1.5"/>
+    <circle cx="290" cy="242" r="2"/><circle cx="310" cy="236" r="1.8"/>
+    <circle cx="330" cy="240" r="2"/><circle cx="345" cy="234" r="1.5"/>
+    <circle cx="255" cy="245" r="1.5"/><circle cx="320" cy="248" r="1.8"/>
+  </g>
+  <!-- Tomato sauce -->
+  <ellipse cx="300" cy="238" rx="80" ry="20" fill="#c0392b" opacity="0.7"/>
+  <!-- Melted mozzarella -->
+  <g fill="#f5f0e1" opacity="0.85">
+    <ellipse cx="285" cy="235" rx="25" ry="10"/>
+    <ellipse cx="315" cy="233" rx="22" ry="9"/>
+    <ellipse cx="300" cy="237" rx="18" ry="8"/>
+  </g>
+  <!-- Basil leaves -->
+  <g fill="#27ae60" filter="url(#shadow)">
+    <ellipse cx="290" cy="228" rx="8" ry="5" transform="rotate(-20 290 228)"/>
+    <ellipse cx="312" cy="230" rx="7" ry="4" transform="rotate(15 312 230)"/>
+  </g>
+  <!-- Title -->
+  <text x="300" y="60" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="22" opacity="0.9">Chicken Parmesan</text>
+  <!-- Steam -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity="0.12">
+    <path d="M 270 190 Q 265 170 275 155"/>
+    <path d="M 300 185 Q 295 165 305 150"/>
+    <path d="M 330 190 Q 325 170 335 155"/>
+  </g>
+</svg>

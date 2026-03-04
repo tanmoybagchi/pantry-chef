@@ -265,6 +265,114 @@ const RECIPES = [
       "Add warm broth one ladle at a time, stirring constantly.",
       "After 20 min, stir in mushrooms, parmesan, and butter. Season and serve."
     ]
+  },
+  {
+    id: 16,
+    title: "Chicken Parmesan",
+    image: "images/chicken-parmesan.svg",
+    time: "35 min",
+    difficulty: "Medium",
+    servings: 2,
+    diet: [],
+    ingredients: ["chicken breast", "breadcrumbs", "parmesan", "eggs", "tomatoes", "mozzarella", "garlic", "basil", "olive oil", "salt", "pepper"],
+    steps: [
+      "Pound chicken breasts to even thickness.",
+      "Set up breading station: flour, beaten eggs, breadcrumbs mixed with parmesan.",
+      "Coat each chicken breast in flour, egg, then breadcrumb mixture.",
+      "Pan-fry in olive oil over medium-high heat, 4 minutes per side until golden.",
+      "Top with tomato sauce, mozzarella, and extra parmesan.",
+      "Bake at 400°F (200°C) for 10 minutes until cheese is bubbly. Garnish with basil."
+    ]
+  },
+  {
+    id: 17,
+    title: "Beef Tacos",
+    image: "images/beef-tacos.svg",
+    time: "25 min",
+    difficulty: "Easy",
+    servings: 3,
+    diet: [],
+    ingredients: ["ground beef", "taco shells", "onion", "garlic", "cumin", "paprika", "tomatoes", "lettuce", "cheese", "sour cream", "salt", "pepper"],
+    steps: [
+      "Brown ground beef in a skillet over medium-high heat, breaking it up as it cooks.",
+      "Add diced onion and garlic, cook until softened.",
+      "Stir in cumin, paprika, salt, and pepper. Cook 1 minute.",
+      "Add diced tomatoes and simmer 5 minutes.",
+      "Warm taco shells in the oven for 2 minutes.",
+      "Fill shells with beef mixture, top with lettuce, cheese, and sour cream."
+    ]
+  },
+  {
+    id: 18,
+    title: "Honey Garlic Chicken",
+    image: "images/honey-garlic-chicken.svg",
+    time: "30 min",
+    difficulty: "Easy",
+    servings: 3,
+    diet: [],
+    ingredients: ["chicken thighs", "garlic", "honey", "soy sauce", "butter", "olive oil", "red pepper flakes", "salt", "pepper", "parsley"],
+    steps: [
+      "Season chicken thighs with salt and pepper.",
+      "Sear in olive oil over medium-high heat, 5 minutes per side. Set aside.",
+      "In the same pan, melt butter and sauté minced garlic for 30 seconds.",
+      "Stir in honey, soy sauce, and red pepper flakes.",
+      "Return chicken to the pan and coat with the sauce.",
+      "Simmer 8–10 minutes until chicken is cooked through and sauce is glossy. Garnish with parsley."
+    ]
+  },
+  {
+    id: 19,
+    title: "Classic Beef Burger",
+    image: "images/beef-burger.svg",
+    time: "20 min",
+    difficulty: "Easy",
+    servings: 2,
+    diet: ["quick"],
+    ingredients: ["ground beef", "burger buns", "lettuce", "tomatoes", "onion", "cheese", "ketchup", "mustard", "salt", "pepper"],
+    steps: [
+      "Divide ground beef into two patties. Season generously with salt and pepper.",
+      "Grill or pan-fry patties over high heat, 4 minutes per side for medium.",
+      "Add a slice of cheese on top during the last minute of cooking.",
+      "Toast burger buns lightly on the grill.",
+      "Assemble burgers with lettuce, tomato, onion, ketchup, and mustard.",
+      "Serve immediately with fries or a side salad."
+    ]
+  },
+  {
+    id: 20,
+    title: "Pork Stir-Fry Noodles",
+    image: "images/pork-noodles.svg",
+    time: "25 min",
+    difficulty: "Easy",
+    servings: 2,
+    diet: [],
+    ingredients: ["pork loin", "noodles", "soy sauce", "garlic", "ginger", "bell pepper", "carrot", "sesame oil", "vegetable oil", "green onion"],
+    steps: [
+      "Cook noodles according to package directions. Drain and set aside.",
+      "Slice pork loin into thin strips. Season with salt and pepper.",
+      "Stir-fry pork in vegetable oil over high heat until browned, about 3 minutes. Remove.",
+      "Add garlic, ginger, sliced bell pepper, and carrot to the wok. Stir-fry 2 minutes.",
+      "Return pork and add noodles, soy sauce, and sesame oil. Toss together.",
+      "Garnish with sliced green onion and serve hot."
+    ]
+  },
+  {
+    id: 21,
+    title: "Lamb Kofta Kebabs",
+    image: "images/lamb-kofta.svg",
+    time: "30 min",
+    difficulty: "Medium",
+    servings: 4,
+    diet: [],
+    ingredients: ["ground lamb", "onion", "garlic", "cumin", "paprika", "parsley", "salt", "pepper", "olive oil", "lemon", "yogurt"],
+    steps: [
+      "Grate onion and squeeze out excess moisture.",
+      "Mix ground lamb with grated onion, minced garlic, cumin, paprika, parsley, salt, and pepper.",
+      "Shape mixture around skewers into oval kebabs.",
+      "Brush with olive oil and grill over high heat, 4 minutes per side.",
+      "Mix yogurt with a squeeze of lemon and a pinch of salt for dipping sauce.",
+      "Serve kebabs with yogurt sauce, warm pita, and a fresh salad."
+    ]
   }
 ];
 
